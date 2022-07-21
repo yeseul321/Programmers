@@ -2,7 +2,6 @@
 #include <cctype>
 #include <unordered_map>
 #include <unordered_set>
-#include <iostream>
 
 using namespace std;
 
@@ -19,8 +18,6 @@ int solution(string str1, string str2) {
     for(int i = 0; i < str2.size(); i++){
         if(islower(str2[i])) str2[i] = toupper(str2[i]);
     }
-
-    cout << str1 << str2;
 
     //두 문자 다 알파벳인 경우에만 map의 수 올려주기
     for(int i = 0; i < str1.size(); i++){
